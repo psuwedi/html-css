@@ -5,6 +5,11 @@ body {
 	margin: 30px;
 }
 
+div {
+	border: 1px solid gray;
+	padding: 8px;
+}
+
 h1 {
 	color:#4CAF50;
 	text-transform: uppercase;
@@ -31,7 +36,7 @@ h3 {
 #p02 {float: right; margin: 05px}
 #p03 {text-align: center;}
 #p04 {margin: 15px;}:
-#ul01 {color:rgb(150,110,110);}
+#ul01 {color:rgb(150,120,110);}
 
 #cent {font-size: 20px;
 		text-align: center;
