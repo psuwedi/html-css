@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+	box-sizing: border-box;
+}	
+
+.box {
+	float: left;
+	width: 33.33%;
+	height: 350px;
+	padding: 50px;
+	overflow: auto;
+}
+
+.img-container {
+	float: left;
+	width: 33.33%;
+	padding: 0px;
+}
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+
+@media screen and (max-width: 600px) {
+			.box, .img-container {width: 100%}
+		}
+</style>
+</head>
+<body>
+<h2>Grid of Boxes</h2>	
+<p>Float boxes side by side:</p>
+
+<div class="clearfix">
+	<div class="box" style="background-color: #bbb">
+		<p>For the last 14 years, Phidelis has helped organizations get the best value for money, by utilizing technologies that support business objectives. His experience and achievements in digital health range from implementation of health informatics interventions, Electronic Medical Record systems, mHealth projects, Management of the Logistics Management Information Systems for the supply chain of medicines, and data management. He enjoys rolling up his sleeves to solve problems facing the health care system.</p>
+	</div>
+	<div class="box" style="background-color: #ccc">
+		<p>Leading a team of 9 Product Owners, responsible for the coordinated management of health Informatics projects. Coordinating cross-functional teams to establish a business case, plan, budget, analyze, design, develop, test and deploy products. Closely collaborating with key stakeholders including Ministry of Health programmes, Project Sponsors (CDC, WDF, UNION and other donors).</p>
+	</div>
+	<div class="box" style="background-color: #ddd">
+		<p> Feeds should meet the animal’s needs for maintenance, growth and reproduction. Good pig feed contains sufficient energy, protein, minerals and vitamins. Rice bran, broken rice, maize, soya-beans, cassava, vegetables and distillers’ residues are often used in pig feed.
+
+	 weaners, simply because of the alcohol content in the waste.</p>
+	</div>
+	<div class="img-container"><img src="images/img1.jpg"></div>
+	<div class="img-container"><img src="images/img2.jpg"></div>
+	<div class="img-container"><img src="images/img3.jpg"></div>
+</div>
+
+</body>
+</html>

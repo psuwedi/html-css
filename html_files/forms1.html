@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form1</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+</head>
+<body>
+	<h2>HTML Forms</h2>
+
+	<form action="/action_page.php" target="_blank">
+		First name:<br />
+		<input type="text" name="firstname" value="Mickey" disabled> 
+		<br />
+		Last name:<br />
+		<input type="text" name="lastname" value="Mouse" readonly>
+		<br />
+		<input type="radio" value="male" checked=checked> Male <br />
+		<input type="radio" value="female"> Female <br />
+		<input type="radio" value="other"> Other <br />
+		<br /><br />
+		<input type="submit" value="submit">
+	</form>
+	<br /><br />
+	<form>
+		<fieldset>
+			<legend>Phidelis's goals</legend>
+		
+		<input type="checkbox" name="goal1" value="fitness">Fitness <input type="date" name="date" min="2017-12-31"> <br />
+		<input type="checkbox" name="goal2" value="agriculture">Agri-Business <br />
+		<input type="checkbox" name="goal3" value="realestate">Real Estate <br />
+		<input type="checkbox" name="goal4" value="Software">Software development services<br />
+		<input type="checkbox" name="goal5" value="career">Director competences
+		<br /><br />
+		<input type="email" name="email" placeholder="email" autofocus > <br /> <br />
+		<input type="color" name="favcolor"> <br /> <br />
+		<input type="date" name="date" max="2018-07-01"> <br /> <br />
+		<input type="month" name="month">
+	
+	</fieldset>
+	</form>
+	<form>
+		<fieldset>
+			<legend>Choose a file to upload</legend>
+			<input type="file" name="myFile">
+		</fieldset>
+	</form>
+	<br /><br />
+	<form>
+		First name:<br />
+		<input type="text" name="firtsname"><br />
+		Last name:<br />
+		<input type="text" name="secondname"><br />
+	</form>
+	<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+	<br /><br />
+	<form>
+		<select>
+		<optgroup label="Employment">
+			<option value="BHT">BHT</option>
+			<option value="JSI">JSI</option>
+			<option value="D-Tree">D-Tree</option>
+			<option value="MIM">MIM</option>
+			<option value="Lighthouse">Lighthouse</option>
+		</optgroup>
+		<optgroup label="Positions">
+			<option value="IT Officer">IT officer</option>
+			<option value="Coordinator">Field coordinator</option>
+			<option value="LIMS Associate">LIMS Associate</option>
+			<option value="Product Manager">Product Manager</option>
+			option
+		</optgroup>
+	</select>
+	<br /><br />
+	<input list="browser" name="browser">
+
+	<datalist id="browsers">
+		<option value="Internet Explorer">
+		<option value="Firefox">
+		<option value="Chrome">
+			
+	</datalist>
+	</form>
+</body>
+</html>

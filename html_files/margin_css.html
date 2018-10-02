@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>margins-css</title>
+	<style>
+	div {
+		border: 1px solid black;
+		margin-top: 100px;
+		margin-bottom: 100px;
+		margin-right: 150px;
+		margin-left: 280px;
+		background-color: lightblue;
+	}
+
+	p.border {
+		border: 1px solid black;
+		margin: 50px 75px 40px 100px;
+	}
+
+	p.width {
+		width: 300px;
+		margin: auto;
+		border: 1px solid red;
+	}
+
+	p.ex1 {
+		margin-left: inherit;
+	}
+
+	p.pad {
+		padding: 70px 30px 50px 80px;
+		border: 1px solid #4CAF50;
+	}
+	</style>
+</head>
+<body>
+<div>THis elemement has a top margin of 100px, a right margin of 150px, a bottom margin of 100px, and a left margin of 80px </div>
+<p class="border">THis elemement has a top margin of 100px, a right margin of 150px, a bottom margin of 100px, and a left margin of</p>
+
+<p class="width">THis elemement has a top margin of 100px, a right margin of 150px, a bottom margin of 100px, and a left margin of</p>
+
+<div>
+<p class="ex1">THis elemement has a top margin of 100px, a right margin of 150px, a bottom margin of 100px, and a left margin of</p>
+</div>
+
+<p class="pad">This is classic. All the padding properties can have the following values:
+
+length - specifies a padding in px, pt, cm, etc.
+% - specifies a padding in % of the width of the containing element
+inherit - specifies that the padding should be inherited from the parent element</p>
+</body>
+</html>

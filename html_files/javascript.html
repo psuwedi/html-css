@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Using the class attribute in javascript</h2>
+<p>Click the button, to hide all elements with the class name "city", with JavaScript</p>
+
+<button onclick="myFunction()">Less</button>
+<button type="button"
+onclick="myshowFunction()">More</button>
+
+
+<h2 class="city show">London</h2>
+<p>London is in the UK</p>
+
+<h2 class="city show">Blantyre</h2>
+<p>Blantyre is in Malawi</p>
+
+<h2 class="city show">Lusaka</h2>
+<p>This is in Zambia</p>
+
+<script>
+	function myFunction() {
+		var x = document.getElementsByClassName("city");
+		for (var i = 0; i < x.length; i++) {
+			x[i].style.display = "none";
+		}
+	}
+
+</script>
+<script>
+	function myshowFunction() {
+		var x = document.getElementsByClassName("show");
+		for (var i = 0; i < x.length; i++) {
+			x[i].style.display = "inherit";
+		}
+	}
+
+</script>
+<h2>Using the id attribute in javascript</h2>
+<p>Javascript can access an element with a specified id using the getElementById() method:</p>
+
+<h1 id="myHeader">Phidelis Suwedi</h1>
+<button onclick="displayResult()">Change text</button>
+
+<script>
+	function displayResult() {
+		document.getElementById("myHeader").innerHTML = "Malawian Superstar!";
+		document.getElementById("myHeader").style.color = "red"
+		document.getElementById("myHeader").style.backgroundColor = "yellow"
+	}
+</script>
+<br>
+<button onclick="myDateDisplay()">What the date</button>
+<h1 id="thedate">Date today</h1>
+
+<script>
+	function myDateDisplay() {
+		document.getElementById("thedate").innerHTML = Date();		
+	}
+</script>
+
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+click me to display date</button>
+<p id="demo"></p>
+
+<button type="button" 
+onclick="imageDemo()">Show Image</button>
+
+<button onclick="imageHide()">Hide Image</button>
+<img id="im" width ="100" height="180"></img>
+
+<script>
+	function imageDemo() {
+		pic = "images/PocketCube.gif"
+		document.getElementById("im").src = pic;
+	}
+</script>
+
+<script>
+	function imageHide() {
+		pic = "images/PocketCube.gif"
+		document.getElementById("im").src = "none";
+	}
+</script>
+</body>
+</html>
+
+

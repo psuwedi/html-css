@@ -1,0 +1,22 @@
+<!DOCTYPE xhtml>
+<html>
+<head>
+	<title>Output Element</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width" initial-scale=1.0>
+</head>
+<body>
+	<form action="/action_page.php" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+		0
+		<input type="range" id="a" name="a" value="50">
+		100 +
+		<input type="number" id="b" name="b" value="50">
+		=
+		<output name="x" for="a b"></output>
+		<br /> <br />
+		<input type="submit">
+	</form>
+
+	<p><strong>Note:</strong> The output element is not supported in Edge 12 or Internet Explorer and earlier version.</p>
+</body>
+</html>

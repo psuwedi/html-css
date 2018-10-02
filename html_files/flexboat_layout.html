@@ -1,0 +1,95 @@
+<html>
+<head>
+	<title>Flexboat Css layout</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: Arial, Helvatica, sans-serif;
+		}
+
+		header {
+			background-color: #666;
+			padding: 30px;
+			text-align: center;
+			font-size: 35px;
+			color: white;
+		}
+
+		/*Container for flexboxes*/
+		section {
+			display: -webkit-flex;
+			display: flex;
+		}
+
+		/*Style the navigation menu*/
+		nav {
+			-webkit-flex: 1;
+			-ms-flex: 1;
+			flex: 1;
+			background: #ccc;
+			padding: 20px;
+		}
+
+		/*Style the list inside the menu*/
+		nav ul {
+			list-sytle-type: none;
+			padding: 0;
+		}
+
+		/*Style the content*/
+		article {
+			-webkit-flex: 3;
+			-ms-flex: 3;
+			flex: 3;
+			background-color: #ffffff;
+			padding: 10px;
+
+		}
+
+		/*Style the footer*/
+		footer {
+			background-color: #777;
+			padding: 10px;
+			text-align: center;
+			color: white;
+		}
+
+		@media (max-width: 600px) {
+			section {
+				-webkit-flex-direction: column;
+				flex-direction: column;
+			}
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h2>Phidelis</h2>
+	</header>
+
+	<section>
+		<nav>
+			<ul>
+				<li><a href="#">Product development</a></li>
+				<li><a href="#">Digital Health</a></li>
+				<li><a href="#">Health Informatics</a></li>
+			</ul>
+		</nav>
+
+		<article>
+			<h1>Digital Health</h1>
+			<p>For the last 14 years, Phidelis has helped organizations get the best value for money, by utilizing technologies that support business objectives. His experience and achievements in digital health range from implementation of health informatics interventions, Electronic Medical Record systems, mHealth projects, Management of the Logistics Management Information Systems for the supply chain of medicines, and data management. He enjoys rolling up his sleeves to solve problems facing the health care system.</p>
+			<p>Leading a team of 9 Product Owners, responsible for the coordinated management of health Informatics projects. Coordinating cross-functional teams to establish a business case, plan, budget, analyze, design, develop, test and deploy products. Closely collaborating with key stakeholders including Ministry of Health programmes, Project Sponsors (CDC, WDF, UNION and other donors).</p>
+		</article>
+	</section>
+
+	<footer>
+		<p>Footer</p>
+	</footer>
+</body>
+</html>

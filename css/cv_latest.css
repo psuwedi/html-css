@@ -1,0 +1,167 @@
+* {
+	box-sizing: border-box;
+}
+
+div {
+	border: 1px solid gray;
+	padding: 8px;
+}
+
+body {
+	border: solid gray 1px;
+	letter-spacing: 2px;
+
+}
+
+#ex {
+	float: left;
+	width: 80px;
+}
+div.top {
+	overflow: auto;
+	height: auto;
+}
+
+div.li1 {
+	float: left; 
+	padding: 50px; 
+	width:33.3%; 
+	text-align: center;
+	border: none;
+	display: flex;
+	justify-content: center;
+	
+}	
+
+div.prof {
+	float: left;
+	padding: 50px;
+	width: 33.3%; 
+	text-align: center;
+	border: none;
+	display: flex;
+	justify-content: center;
+}
+
+div.imag {
+	float:left;
+	width: 33.3%;
+	padding: 0px;
+	border: none;
+	display: flex;
+	justify-content: center;
+
+}
+
+@media screen and (max-width: 600px) {
+			div.li1, div.prof, div.img {width: 100%}
+		}
+
+
+div.spec {
+	width:50%; 
+	float: left;
+	border:0;
+	padding: 10px;
+}
+
+div.tool {
+	width:50%; 
+	float: left;
+	border:0;
+	padding: 25px;
+}
+h1 {
+	color:#4CAF50;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 30px;
+}
+
+
+p {color:#000000; line-height: 1.7;}
+		
+hr {color:Tomato;}
+
+h2 {
+	text-align: left;
+	color:#000000;
+	font-size:20px;
+ }
+		
+h3 {
+	color:#000000;
+	font-size:15px;
+ }
+
+#p01 {
+	float: left; 
+	text-align: left;
+	width: 30%;
+	padding: 10px;
+}	
+
+#p02 {
+	float: left; 
+	width: 40%;
+	text-align: center;
+}
+
+#p03 {
+	float: left; 
+	text-align: right;
+	width: 30%;
+	padding: 10px;
+}
+
+#p04 {margin: 15px; text-align: justify;}:
+#ul01 {color:rgb(150,110,110);}
+
+
+
+a:link {
+	color: green;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a:visited {
+	color:rgb(150,110,110);
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a:hover {
+	color:red;
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+a:active {
+	color:yellow;
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+#line {
+	border: 1px solid rgb(120,130,135);
+	border-collapse: collapse;	
+	margin: 15px;
+	padding: 5px;
+
+}
+
+#edu {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+#edu td, #edu th {
+	border: 1px solid #ddd;
+	padding: 5px;
+}
+
+#edu tr:nth-child(even){background-color: #f2f2f2;}b
+
+#edu tr:hover {background-color: #ddd;}

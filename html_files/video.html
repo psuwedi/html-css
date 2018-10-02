@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<video width="400" controls>
+  <source src="Videos/Bubble.mp4" type="video/mp4">
+  Your browser does not support HTML video.
+</video>
+<p>	
+Video courtesy of
+<a href="https://www.google.com/" target="_blank">Bubble turn to Ice</a>
+</p>
+<br />
+<br />
+<div style="text-align:center">
+	<button onclick="playPause()">Play/Pause</button>
+	<button onclick="makeBig()">Big</button>
+	<button onclick="makeSmall()">Small</button>
+	<button onclick="makeNormal()">Normal</button>
+	<br /><br />
+	<video id="video1" width="420">
+	  <source src="Videos/mov_bbb.mp4" type="video/mp4">
+	  Your browser does not support HTML5 video.
+		
+	</video>
+</div>
+
+<script>
+	var myVideo = document.getElementById("video1");
+	function playPause() {
+		if (myVideo.paused)
+			myVideo.play();
+		else
+			myVideo.pause();
+	}
+
+	function makeBig() {
+		myVideo.width = 560;
+	}
+
+	function makeSmall() {
+		myVideo.width = 320;
+	}
+
+	function makeNormal() {
+		myVideo.width = 420;
+	}
+</script>
+
+<p>Video courtesy of <a href="https://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny<a/>.</p>
+<br /><br />
+<audio controls>
+  <source src="Audio/Audio.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<br /><br />
+<p><strong>You Tube Video</strong></p>
+<iframe width="420" height="345"
+src="https://www.youtube.com/embed/tgbNymZ7vqY">
+</iframe>>
+</html>
