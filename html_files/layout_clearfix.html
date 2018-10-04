@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>clearFix</title>
+    <style>
+    * {
+        box-sizing: border-box;
+    }
+    .header, .footer {
+        background-color: grey;
+        color: white;
+        padding: 15px;
+    }
+    .column {
+        float: left;
+        padding:15px;
+    }
+    .clearFix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    .menu {
+        width: 25%;
+    }
+    .content {
+        width: 75%;
+    }
+    .menu ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    .menu li {
+        padding: 8px;
+        margin-bottom: 8px;
+        background-color: #33b5e5;
+        color: #ffffff;
+    }
+    .menu li:hover{
+        background-color: #0099cc;
+    }
+    @media only screen and (max-width:620px){
+        .header, .menu, .content, .footer {
+            width: 100%;
+        }
+    }
+    </style>
+    </head>
+
+    <body>
+    <div class ="header">
+        <h1 style="text-align:center">Fromagate</h1>
+    </div>
+    <div class="clearFix">
+        <div class="column menu">
+            <ul>
+                <li>Web development</li>
+                <li>Search Engine Optimisation</li>
+                <li>Hosting services</li>
+                <li>Electronic Medical Systems</li>
+                <li>IT consulting</li>
+                <li>IT trainings</li>
+                <li>Data Entry services</li>
+                <li>Software maintenance</li>
+            </ul>
+        </div>
+    
+    <div class="column content">
+        <h1><em>IT</em> is us</h1>
+        <p>We work with many types of IT customers with unique needs and very different budget levels. We craft an IT plan and budget for each customer to help them get the best value and strategically select their services and products.</p>
+        <br/>
+        <h1>Web development</h1>
+        <p>From beautiful and effective marketing websites to custom web applications, we offer award winning work, precise project management, and clear pricing.</p>
+    </div>
+    </div>
+    <div class="footer">
+            <p style="text-align: center">FLOMAGATE</p>
+        </div>
+    </body>
+</html>
